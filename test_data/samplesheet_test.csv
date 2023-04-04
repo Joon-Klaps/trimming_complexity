@@ -1,0 +1,2 @@
+sample,fastq_1,fastq_2,reference_index,reference
+test1,../test_data/reads/test_1.fastq.gz,../test_data/reads/test_2.fastq.gz, /workspace/benchmarkin/test_data/sarscov/,/workspace/benchmarkin/test_data/genome.fasta
