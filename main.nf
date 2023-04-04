@@ -136,12 +136,13 @@ workflow TRIMMING_BENCH {
 }
 
 // Function to get list of [ meta, [ fastq_1, fastq_2 ], ]
-def extend_meta(tuple_data, String extension) {
+def rename_meta_id(tuple_data, String extension) {
     def meta = tuple_data[0].clone()
-    meta.extension = "$extension"
-    
+    meta.id = "${meta.id}_$extension"
+
     return tuple(meta, tuple_data[1])
 }
+
 
 /*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -1,6 +1,6 @@
 .DS_Store
 ~$*
-*/work/
+work/
 */.nextflow*
 .nextflow*
-*/testing
+testing
